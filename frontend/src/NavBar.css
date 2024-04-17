@@ -1,0 +1,52 @@
+/* NavBar.css */
+.bg-dark {
+  background-color: #343a40 !important; /* Bootstrap dark background */
+  color: #ffffff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Higher index to keep navbar on top */
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Optional shadow for better visibility */
+}
+
+.navbar-brand {
+  color: #ffffff !important; /* Ensuring brand text is white */
+  font-size: 1.5rem; /* Larger text for the brand/logo */
+  padding-left: 1rem; /* Spacing from the left edge */
+}
+
+.nav-link {
+  color: #f8f9fa !important; /* Light link text for visibility */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #cbd3da !important; /* Lighter grey on hover/focus */
+  text-decoration: none; /* Removes underline */
+}
+
+.nav-item {
+  margin-right: 1rem; /* Spacing between navigation items */
+}
+
+/* Adjusting padding for nav items on smaller screens */
+@media (max-width: 768px) {
+  .nav-item {
+      margin-bottom: 0.5rem;
+      margin-right: 0;
+  }
+}
+
+/* Ensuring the navbar expands properly on medium devices and up */
+@media (min-width: 768px) {
+  .ml-auto {
+      margin-left: auto !important; /* Pushes the nav to the right */
+  }
+}
+
+/* Fixing NavLink default styles, if any */
+.NavLink {
+  text-decoration: none;
+  outline: none;
+}
